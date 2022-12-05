@@ -14,7 +14,7 @@ let duck = {
 
 This `duck` object has two property/value pairs: a `name` of `Aflac` and a `numLegs` of 2.
 
-![](D:\Playground\JavaScript\fcc-oop-visualization\assets\01.png)
+![](./assets/01.png)
 
 ## [Create a Method on an Object](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/object-oriented-programming/create-a-method-on-an-object)
 
@@ -33,7 +33,7 @@ duck.sayName();
 
 The example adds the `sayName` method, which is a function that returns a sentence giving the name of the `duck`.
 
-![](D:\Playground\JavaScript\fcc-oop-visualization\assets\03.png)
+![](./assets/03.png)
 
 ## [Define a Constructor Function](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/object-oriented-programming/define-a-constructor-function)
 
@@ -55,7 +55,7 @@ This constructor defines a `Bird` object with properties `name`, `color`, and `n
 - Constructors use the keyword `this` to set properties of the object they will create. Inside the constructor, `this` refers to the new object it will create.
 - Constructors define properties and behaviors instead of returning a value as other functions might.
 
-![](D:\Playground\JavaScript\fcc-oop-visualization\assets\05.png)
+![](./assets/05.png)
 
 ## [Use a Constructor to Create Objects](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/object-oriented-programming/use-a-constructor-to-create-objects)
 
@@ -81,7 +81,7 @@ blueBird.color;
 blueBird.numLegs;
 ```
 
-![](D:\Playground\JavaScript\fcc-oop-visualization\assets\06.png)
+![](./assets/06.png)
 
 ## [Verify an Object's Constructor with instanceof](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/object-oriented-programming/verify-an-objects-constructor-with-instanceof)
 
@@ -101,7 +101,7 @@ crow instanceof Bird;
 
 This `instanceof` method would return `true`.
 
-![](D:\Playground\JavaScript\fcc-oop-visualization\assets\08.png)
+![](./assets/08.png)
 
 ## [Use Prototype Properties to Reduce Duplicate Code](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/object-oriented-programming/use-prototype-properties-to-reduce-duplicate-code)
 
@@ -124,7 +124,7 @@ console.log(canary.numLegs);
 
 Since all instances automatically have the properties on the `prototype`, think of a `prototype` as a "recipe" for creating objects. Note that the `prototype` for `duck` and `canary` is part of the `Bird` constructor as `Bird.prototype`. Nearly every object in JavaScript has a `prototype` property which is part of the constructor function that created it.
 
-![](D:\Playground\JavaScript\fcc-oop-visualization\assets\10.png)
+![](./assets/10.png)
 
 ## [Iterate Over All Properties](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/object-oriented-programming/iterate-over-all-properties)
 
@@ -187,7 +187,7 @@ for (let property in beagle) {
 }
 ```
 
-![](D:\Playground\JavaScript\fcc-oop-visualization\assets\11&12.png)
+![](./assets/11&12.png)
 
 ## [Understand the Constructor Property](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/object-oriented-programming/understand-the-constructor-property)
 
@@ -237,7 +237,7 @@ Bird.prototype = {
 };
 ```
 
-![](D:\Playground\JavaScript\fcc-oop-visualization\assets\13.png)
+![](./assets/13.png)
 
 ## [Remember to Set the Constructor Property when Changing the Prototype](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/object-oriented-programming/remember-to-set-the-constructor-property-when-changing-the-prototype)
 
@@ -266,7 +266,7 @@ Bird.prototype = {
 };
 ```
 
-![](D:\Playground\JavaScript\fcc-oop-visualization\assets\14.png)
+![](./assets/14.png)
 
 ## [Understand the Prototype Chain](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/object-oriented-programming/understand-the-prototype-chain)
 
@@ -295,7 +295,7 @@ duck.hasOwnProperty("name");
 
 The `hasOwnProperty` method is defined in `Object.prototype`, which can be accessed by `Bird.prototype`, which can then be accessed by `duck`. This is an example of the `prototype` chain. In this `prototype` chain, `Bird` is the `supertype` for `duck`, while `duck` is the `subtype`. `Object` is a `supertype` for both `Bird` and `duck`. `Object` is a `supertype` for all objects in JavaScript. Therefore, any object can use the `hasOwnProperty` method.
 
-![](D:\Playground\JavaScript\fcc-oop-visualization\assets\16.png)
+![](./assets/16.png)
 
 ## [Use Inheritance So You Don't Repeat Yourself](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/object-oriented-programming/use-inheritance-so-you-dont-repeat-yourself)
 
@@ -344,7 +344,7 @@ Dog.prototype = {
 };
 ```
 
-![](D:\Playground\JavaScript\fcc-oop-visualization\assets\17.png)
+![](./assets/17.png)
 
 ## [Inherit Behaviors from a Supertype](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/object-oriented-programming/inherit-behaviors-from-a-supertype)
 
@@ -378,7 +378,7 @@ animal instanceof Animal;
 
 The `instanceof` method here would return `true`.
 
-![](D:\Playground\JavaScript\fcc-oop-visualization\assets\18.png)
+![](./assets/18.png)
 
 ## [Set the Child's Prototype to an Instance of the Parent](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/object-oriented-programming/set-the-childs-prototype-to-an-instance-of-the-parent)
 
@@ -422,7 +422,7 @@ Dog.prototype = Object.create(Animal.prototype)
 let beagle = new Dog();
 ```
 
-![](D:\Playground\JavaScript\fcc-oop-visualization\assets\19.png)
+![](./assets/19.png)
 
 ## [Reset an Inherited Constructor Property](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/object-oriented-programming/reset-an-inherited-constructor-property)
 
@@ -465,7 +465,7 @@ let duck = new Bird()
 let beagle = new Dog()
 ```
 
-![](D:\Playground\JavaScript\fcc-oop-visualization\assets\20.png)
+![](./assets/20.png)
 
 ## [Add Methods After Inheritance](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/object-oriented-programming/add-methods-after-inheritance)
 
@@ -501,7 +501,7 @@ duck.fly();
 
 `duck.eat()` would display the string `nom nom nom` in the console, and `duck.fly()` would display the string `I'm flying!`.
 
-![](D:\Playground\JavaScript\fcc-oop-visualization\assets\21.png)
+![](./assets/21.png)
 
 ## [Override Inherited Methods](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/object-oriented-programming/override-inherited-methods)
 
@@ -540,7 +540,7 @@ If you have an instance `let duck = new Bird();` and you call `duck.eat()`, this
 3. `Animal` => `eat()` is also defined, but JavaScript stopped searching before reaching this level.
 4. Object => JavaScript stopped searching before reaching this level.
 
-![](D:\Playground\JavaScript\fcc-oop-visualization\assets\22.png)
+![](./assets/22.png)
 
 ## [Use a Mixin to Add Common Behavior Between Unrelated Objects](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/object-oriented-programming/use-a-mixin-to-add-common-behavior-between-unrelated-objects)
 
@@ -584,7 +584,7 @@ The console would display the string `Flying, wooosh!` twice, once for each `.fl
 
 Note how the mixin allows for the same `fly` method to be reused by unrelated objects `bird` and `plane`.
 
-![](D:\Playground\JavaScript\fcc-oop-visualization\assets\23.png)
+![](./assets/23.png)
 
 ## [Use Closure to Protect Properties Within an Object from Being Modified Externally](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/object-oriented-programming/use-closure-to-protect-properties-within-an-object-from-being-modified-externally)
 
@@ -612,7 +612,7 @@ ducky.getHatchedEggCount();
 
 Here `getHatchedEggCount` is a privileged method, because it has access to the private variable `hatchedEgg`. This is possible because `hatchedEgg` is declared in the same context as `getHatchedEggCount`. In JavaScript, a function always has access to the context in which it was created. This is called `closure`.
 
-![](D:\Playground\JavaScript\fcc-oop-visualization\assets\24.png)
+![](./assets/24.png)
 
 ## [Use an IIFE to Create a Module](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/object-oriented-programming/use-an-iife-to-create-a-module)
 
@@ -657,6 +657,5 @@ motionModule.glideMixin(duck);
 duck.glide();
 ```
 
-![](D:\Playground\JavaScript\fcc-oop-visualization\assets\26.png)
-
+![](./assets/26.png)
 
